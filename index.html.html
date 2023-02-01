@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url(bg2.png);
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
+      }
+
+      .button {
+        padding: 1rem 2rem;
+        background-color: lightblue;
+        color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-decoration: underline;
+        margin: 1rem;
+        transition: all 0.2s ease-in-out;
+        min-width: 100px;
+        text-align: center;
+      }
+
+      .button:hover {
+        background-color: blue;
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 767px) {
+        .container {
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a class="button" href="#about">About</a>
+      <a class="button" href="#information">Information</a>
+      <a class="button" href="#diamondlock">DiamondLock</a>
+      <a class="button" href="#bluegemlock">BlueGemLock</a>
+    </div>
+  </body>
+</html>
